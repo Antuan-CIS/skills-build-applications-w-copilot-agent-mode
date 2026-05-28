@@ -1,0 +1,107 @@
+.App {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, rgba(56, 189, 248, 0.15), transparent 25%),
+    linear-gradient(180deg, #0f172a 0%, #111827 40%, #1e293b 100%);
+  color: #f8fafc;
+}
+
+body {
+  background-color: #0f172a;
+}
+
+.app-shell {
+  padding: 2rem 1rem 3rem;
+}
+
+.app-header {
+  padding: 1rem 1.25rem;
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: 1rem;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.35);
+}
+
+.app-logo {
+  height: 60px;
+  width: auto;
+}
+
+.app-title {
+  color: #e2e8f0;
+  font-weight: 700;
+}
+
+.navbar-custom {
+  background: rgba(30, 41, 59, 0.96);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.nav-link {
+  color: #cbd5e1 !important;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #f8fafc !important;
+}
+
+.table-custom {
+  background: rgba(15, 23, 42, 0.92);
+  color: #e2e8f0;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.table-custom thead {
+  background: rgba(59, 130, 246, 0.18);
+}
+
+.table-custom th,
+.table-custom td {
+  vertical-align: middle;
+  border-top: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.table-custom tbody tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.card-custom {
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.card-custom h2,
+.card-custom h3,
+.card-custom h4,
+.card-custom h5 {
+  color: #f8fafc;
+}
+
+.btn-custom {
+  background: #3b82f6;
+  border-color: #3b82f6;
+  color: #fff;
+}
+
+.btn-custom:hover,
+.btn-custom:focus {
+  background: #2563eb;
+  border-color: #2563eb;
+}
+
+.code-block {
+  background: rgba(15, 23, 42, 0.8);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  overflow-x: auto;
+  font-size: 0.88rem;
+}
+
+.text-muted-custom {
+  color: #94a3b8;
+}
+
+.footer-note {
+  color: #cbd5e1;
+}
