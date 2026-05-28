@@ -14,10 +14,21 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
+import os
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from . import views
+
+
+CODESPACE_NAME = os.getenv('CODESPACE_NAME')
+
+
+def api_root(request, format=None):
+    if CODESPACE_NAME:
+        request.META['HTTP_HOST'] = f'{CODESPACE_NAME}-8000.app.github.dev'
+        request.META['wsgi.url_scheme'] = 'https'
+    return views.api_root(request, format=format)
 
 
 router = DefaultRouter()
