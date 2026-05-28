@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import { endpointFor } from '../apiConfig';
 
 const resource = 'teams';
-const baseUrl = process.env.REACT_APP_CODESPACE_NAME
-  ? `https://${process.env.REACT_APP_CODESPACE_NAME}-8000.app.github.dev/api`
-  : 'http://localhost:8000/api';
-const endpoint = `${baseUrl}/${resource}/`;
+const endpoint = endpointFor(resource);
 
 function Teams() {
   const [items, setItems] = useState([]);
