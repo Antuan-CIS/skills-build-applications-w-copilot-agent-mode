@@ -3,6 +3,7 @@ import { endpointFor } from '../apiConfig';
 
 const resource = 'workouts';
 const endpoint = endpointFor(resource);
+// Codespace API example: https://your-codespace-8000.app.github.dev/api/workouts/
 
 function Workouts() {
   const [items, setItems] = useState([]);

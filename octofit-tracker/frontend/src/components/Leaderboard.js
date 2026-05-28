@@ -3,6 +3,7 @@ import { endpointFor } from '../apiConfig';
 
 const resource = 'leaderboard';
 const endpoint = endpointFor(resource);
+// Codespace API example: https://your-codespace-8000.app.github.dev/api/leaderboard/
 
 function Leaderboard() {
   const [items, setItems] = useState([]);

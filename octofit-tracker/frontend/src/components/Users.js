@@ -3,6 +3,7 @@ import { endpointFor } from '../apiConfig';
 
 const resource = 'users';
 const endpoint = endpointFor(resource);
+// Codespace API example: https://your-codespace-8000.app.github.dev/api/users/
 
 function DetailsModal({ item, onClose }) {
   if (!item) return null;
